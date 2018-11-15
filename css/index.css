@@ -1,0 +1,106 @@
+*{
+	margin: auto;
+	padding: 0;
+}
+
+html,body {
+	width: 960px;
+	height: 100%;
+}
+
+body {
+	background:
+     #EAECF0 
+}
+header{
+	width: 960px;
+	height:430px;
+	margin: 1px 1px 1px 1px;
+	padding: 20px 1px 1px 1px;
+}
+
+
+nav {
+	overflow: hidden;
+	float: right;
+}
+
+nav li {
+	float:left;
+	list-style: none;
+	background-color: #fad2e0;
+}
+nav li a {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 0 30px;
+	color: #143567;
+	text-shadow: 0 1px 0 white;
+}
+
+nav li a:hover {
+	color: #a45f93;
+}
+nav li:active {
+	background-color: #fff;
+}
+
+.banner {
+	display:block;
+}
+main {
+text-align: center;
+}
+h2{
+	color:#e93578;
+}
+.production {
+	float: left;
+}
+.category-side{
+	width: 292px;
+	height: 292px;
+	padding: 15px 14px;
+}
+.why-coose-us-title {
+	font-size: 26px;
+	color: #e93578
+}
+.why-coose-us-text {
+	font-size: 20;
+}
+.find-us{
+	height: 380px
+}
+h3{
+	color:#e93578;
+}
+
+h4{
+	color: #e93578;
+}
+.contact-us {
+	text-align: left; 
+	float: right;
+	height: 400px;
+	width: 400px;
+}
+.map{
+	float: left;
+}
+.social-networks-logo{
+	height: 60px;
+	width: 60px;
+	float: right;
+	padding-top: 10px;
+	padding-right: 20px;
+	opacity: 1;
+}
+.social-networks-logo:hover {
+  opacity: 0.6;
+}
+footer{
+	height: 150px;
+	background-color: #fad2e0;
+}
