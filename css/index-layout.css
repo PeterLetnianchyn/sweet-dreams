@@ -1,0 +1,25 @@
+/* Large */
+.main-menu {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .main-menu {
+    /* On small screens, we are no longer using row direction but column */
+    margin: 0 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+  }
+  .main-menu li{
+      min-width: 100vw;
+      width:100%;
+  
+      
+  }
+}
