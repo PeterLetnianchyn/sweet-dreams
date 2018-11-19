@@ -1,12 +1,10 @@
-*{
-	margin: auto;
-	padding: 0;
-}
 
 html,body {
 	width: 100%;
 	height: 100%;
 	max-width: 960px;
+	margin: auto;
+	padding: 0;
 }
 
 body {
@@ -16,7 +14,6 @@ body {
 header{
 	display: flex;
 	flex-direction:column;
-	justify-content:flex-end;
 	height:auto;
 }
 
@@ -56,6 +53,7 @@ nav li:active {
 }
 
 .banner {
+	margin-top: -18px;
 	display: flex;
 	width: auto;
 	height: auto;
@@ -68,6 +66,7 @@ nav li:active {
 }
 main {
 text-align: center;
+margin: -18px auto auto auto;
 }
 
 main .category-conteiner{
@@ -109,6 +108,7 @@ h2{
 	padding-top: 30px;
 	display: flex;
 	flex-direction:row;
+	justify-content: center;
 	flex-wrap: wrap;
 	height: 400px
 }
@@ -125,6 +125,8 @@ h4{
 	text-align: left; 
 }
 .map{
+	height: 385px;
+	width: 500px;
 }
 .social-networks-logo{
 	height: 60px;
