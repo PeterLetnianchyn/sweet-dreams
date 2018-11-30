@@ -7,19 +7,40 @@
 }
 
 
+@media all and (max-width: 750px) {
+  
+}
 /* Small screens */
 @media all and (max-width: 500px) {
   .main-menu {
     /* On small screens, we are no longer using row direction but column */
     margin: 0 0;
-    flex-direction: column;
-    justify-content: flex-start;
-    width:100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+  
   }
+  
   .main-menu li{
-      min-width: 100vw;
       width:100%;
+      padding: 0;
     
   }
-
+  .main-menu li a{
+    padding: 0;
+  } 
+  .category-conteiner{
+    display: flex;
+    justify-content:center;
+  }
+  main{
+    justify-content:center;
+  }
+  .map{
+    width: 97%;
+  }
+  .contact-us{
+    width: 99%;
+  }
 }

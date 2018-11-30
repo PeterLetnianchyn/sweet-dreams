@@ -13,30 +13,27 @@
             <nav>
                 <ul class="main-menu">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#about-us">About Us</a></li>
-                    <li><a href="#production">Production</a></li>
-                    <li><a href="#our-team">Our team</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="about-us" >About Us</a></li>
+                    <li><a class="production" href="#production">Production</a></li>
+                    <li><a class="our-team" href="#our-team">Our team</a></li>
+                    <li><a class="contact" href="#contact">Contact</a></li>
                 </ul>
                 </nav>
                 <div class="banner">
                  <a><img src="img/banner.jpg" alt="banner"></a>
                 </div>
         </header>
-        <main>
+        <main id="main">
             <h2>Our Production</h2>
             <div class="category-conteiner">
                 
-                <div class="production">
-                    <a href="#"><img class="category-side"  src="img/pastries.jpg" alt="pastry"></a>
+                <div class="category-pastry">
                 	<h3><a href="#">Pastries</a></h3>
                 </div>
-                <div class="production">
-                    <a href="#"><img class="category-side"  src="img/cake.jpg" alt="cake"></a>
+                <div class="category-cake">
                 	<h3><a href="#">Cake</a></h3>
                 </div>
-                <div class="production">
-                    <a href="#"><img class="category-side" src="img/other-sweets.jpg" alt="sweets"></a>
+                <div class="category-other-sweets">
                 	<h3><a href="#">Other sweets</a></h3>
                 </div>
             </div>
@@ -57,7 +54,7 @@
                      <div class="map">
                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20545.995972264027!2d23.55213396904934!3d49.931659606875805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b3d663fcc44a3%3A0x4d8c19463c4a1b02!2z0J3QvtCy0L7Rj9Cy0L7RgNGW0LLRgdGM0LosINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1suk!2sua!4v1542287682818"  style="border:0" allowfullscreen></iframe>
                     </div>
-                    <article class="contact-us">
+                    <div class="contact-us">
                         <h4>Write us and you will definitely get the answer</h4>
                         <form method="post" action="https://formspree.io/katalol95@gmail.com">    
                             <p>
@@ -83,7 +80,7 @@
                               <label>
                                 Your message:
                               </label><br>
-                              <textarea name="message" cols="53" rows="10"></textarea>
+                              <textarea class="text-area" name="message" ></textarea>
                               
                             </p>
                             </div> 
@@ -105,12 +102,13 @@
                             </div>
                         </div>
     
-                    </article>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
-
+    
         </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
