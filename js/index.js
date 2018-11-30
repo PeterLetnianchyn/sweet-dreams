@@ -4,7 +4,7 @@ function getHtmlAjax() {
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
-           document.querySelector('.main').innerHTML = xhr.responseXML;
+           document.querySelector('#main').innerHTML = xhr.responseText;
         }
     }
     xhr.open('GET', 'about-us.html', true);
