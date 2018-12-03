@@ -11,16 +11,18 @@
   
     .main-menu {
     /* On small screens, we are no longer using row direction but column */
-    margin: 0 0;
     display: flex;
-    justify-content: space-around;
     padding: 0;
     width: 100%;
     
   }
     .main-menu li{
-      width:100%;
-      padding: 0;
+      flex-direction:row;
+      flex-wrap:wrap;
+      min-width:50%;
+      max-width: 100%;
+      padding-left: 0;
+      
     
   }
 }
