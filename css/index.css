@@ -266,6 +266,8 @@ h1{
 	color: #e93578
 }
 .pastries{
+	background-color: #fffcda;
+	border: solid 1px #fffcda;
 	flex-direction:row;
 	width: 30%;
 	height: 90%;
@@ -288,6 +290,8 @@ h1{
 	}
 
 .cake{
+	background-color: #fffcda;
+	border:solid 1px #fffcda;
 	flex-direction:row;
 	width: 30%;
 	height: 90%;
