@@ -7,7 +7,9 @@ html,body {
 	background-color: #fad2e0;
 	/*background-color: #fffcda;*/
 }
-
+body{
+	border: solid 1px #fffcda;
+}
 header{
 	display: flex;
 	flex-direction:column;
@@ -25,6 +27,7 @@ nav ul{
 
 
 nav ul li {
+	border: solid 1px #fffcda;
 	display: flex;
 	justify-content:space-around;
 	list-style: none;
@@ -39,7 +42,7 @@ nav li a {
 	text-decoration: none;
 	padding: 0 30px;
 	color: #143567;
-	text-shadow: 0 1px 0 white;
+	text-shadow: 0 -1px 0 white;
 }
 
 nav li a:hover {
@@ -196,7 +199,7 @@ h2{
 }
 .video{
 	display: flex;
-	flex-direction:column;
+	justify-content:center;
 	height: 400px;
 	width:99%;
 }
