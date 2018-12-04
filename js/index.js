@@ -1,3 +1,5 @@
+
+
 document.querySelector('.about-us').addEventListener('click', getHtmlAjaxAboutUs);
 
 function getHtmlAjaxAboutUs() {
@@ -47,4 +49,51 @@ function getHtmlAjaxContact() {
     };
     xhr.open('GET', 'contact.html', true);
     xhr.send();
+}
+
+document.querySelector('.category-pastry').addEventListener('click', getHtmlAjaxPastry);
+
+function getHtmlAjaxPastry() {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+           document.querySelector('#main').innerHTML = xhr.responseText;
+        }
+    };
+    xhr.open('GET', 'pastries.html', true);
+    xhr.send();
+}
+
+document.querySelector('.category-cake').addEventListener('click', getHtmlAjaxCake);
+
+function getHtmlAjaxCake() {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+           document.querySelector('#main').innerHTML = xhr.responseText;
+        }
+    };
+    xhr.open('GET', 'cake.html', true);
+    xhr.send();
+}
+
+document.querySelector('.contact').addEventListener('click', getHtmlAjaxContact);
+
+function getHtmlAjaxOtherSweets() {
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+           document.querySelector('#main').innerHTML = xhr.responseText;
+        }
+    };
+    xhr.open('GET', 'contact.html', true);
+    xhr.send();
+}
+function myFunction() {
+  let link = document.getElementById("myLinks");
+  if (link.style.display === "block") {
+    link.style.display = "none";
+  } else {
+    link.style.display = "block";
+  }
 }
