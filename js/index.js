@@ -1,4 +1,11 @@
-
+function myFunction() {
+  let link = document.getElementById("myLinks");
+  if (link.style.display === "block") {
+    link.style.display = "none";
+  } else {
+    link.style.display = "block";
+  }
+}
 
 document.querySelector('.about-us').addEventListener('click', getHtmlAjaxAboutUs);
 
@@ -77,7 +84,7 @@ function getHtmlAjaxCake() {
     xhr.send();
 }
 
-document.querySelector('.contact').addEventListener('click', getHtmlAjaxContact);
+document.querySelector('.category-other-sweets').addEventListener('click', getHtmlAjaxOtherSweets);
 
 function getHtmlAjaxOtherSweets() {
     const xhr = new XMLHttpRequest();
@@ -86,14 +93,6 @@ function getHtmlAjaxOtherSweets() {
            document.querySelector('#main').innerHTML = xhr.responseText;
         }
     };
-    xhr.open('GET', 'contact.html', true);
+    xhr.open('GET', 'other-sweets.html', true);
     xhr.send();
-}
-function myFunction() {
-  let link = document.getElementById("myLinks");
-  if (link.style.display === "block") {
-    link.style.display = "none";
-  } else {
-    link.style.display = "block";
-  }
 }
